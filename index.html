@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VCareMind Landing Page</title>
-  <meta name="description" content="VCareMind — Trợ lý AI giọng nói đồng hành cùng người cao tuổi chăm sóc sức khỏe tinh thần và thể chất." />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VCareMind - Trợ lý AI đồng hành sức khỏe người cao tuổi</title>
+    <meta name="description" content="VCareMind — Trợ lý AI giọng nói đồng hành cùng người cao tuổi chăm sóc sức khỏe tinh thần và thể chất." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-gray-100 text-gray-800">
 
-  <!-- Header -->
-  <header class="flex items-center justify-between px-6 py-4 bg-white shadow">
-    <div class="flex items-center space-x-2">
-      <img src="./asset/logo.png" alt="Logo" class="w-10 h-10 rounded-full">
-      <span class="text-xl font-bold text-indigo-600">VCareMind</span>
-    </div>
-    <nav class="hidden md:flex space-x-6">
-      <a href="#features" class="text-gray-600 hover:text-indigo-600">Tính năng</a>
-      <a href="#testimonials" class="text-gray-600 hover:text-indigo-600">Người dùng nói gì</a>
-      <a href="#download" class="text-gray-600 hover:text-indigo-600">Tải ứng dụng</a>
-    </nav>
-  </header>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-2">
+                <img src="./asset/logo.png" alt="Logo" class="w-10 h-10 rounded-full">
+                <span class="text-2xl font-bold text-blue-600">VCareMind</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Tính năng</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Người dùng nói gì</a>
+                <a href="#download" class="text-gray-600 hover:text-blue-600 font-medium transition duration-300">Tải ứng dụng</a>
+                <a href="#download" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition duration-300">Tải ngay</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 text-center px-6">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Chào mừng đến với VCareMind</h1>
-    <p class="text-lg md:text-xl mb-6">
-      Trợ lý ảo giọng nói AI — Đồng hành cùng sức khỏe tinh thần & thể chất cho người cao tuổi.
-    </p>
-    <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200 transition">
-      Khám phá ngay
-    </a>
-  </section>
+    <section class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-hero-pattern opacity-10"></div>
+        <div class="container mx-auto text-center px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-up">Chào mừng đến với <span class="text-yellow-300">VCareMind</span></h1>
+            <p class="text-lg md:text-2xl font-light mb-8 max-w-2xl mx-auto animate-fade-in-up delay-200">
+                Trợ lý ảo giọng nói AI — Đồng hành cùng sức khỏe tinh thần & thể chất cho người cao tuổi.
+            </p>
+            <a href="#features" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                Khám phá ngay <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
 
-  <!-- Features -->
-  <section id="features" class="py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Tính năng nổi bật</h2>
-    <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto">
+    <section id="features" class="py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-800">Tính năng nổi bật</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Giúp người cao tuổi sống vui khỏe mỗi ngày với các tính năng thông minh, dễ sử dụng.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left max-w-7xl mx-auto">
+                <div class="p-8 bg-white shadow-xl rounded-2xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Trò chuyện & Đồng hành tinh thần</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                        <li>Trò chuyện thân thiện, hỏi thăm mỗi ngày.</li>
+                        <li>Tư vấn y tế theo khuyến cáo bác sĩ.</li>
+                        <li>Ghi lại hồi ký bằng giọng nói.</li>
+                        <li>Tự động trích xuất thói quen & hồi ký.</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-white shadow-xl rounded-2xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-bell"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Nhắc nhở y tế thông minh</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                        <li>Thông báo bằng giọng nói gần gũi.</li>
+                        <li>Nhắc lịch uống thuốc, vận động, ăn uống.</li>
+                        <li>Tự động tạo lịch nhắc thuốc từ đơn.</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-white shadow-xl rounded-2xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-pills"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Quét & Quản lý thuốc</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                        <li>Quét thuốc để nhận diện tên, công dụng.</li>
+                        <li>Điều hướng nhanh bằng trợ lý ảo.</li>
+                        <li>Lưu lại lịch sử thuốc để tham khảo.</li>
+                    </ul>
+                </div>
+                <div class="p-8 bg-white shadow-xl rounded-2xl transform hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl text-blue-500 mb-4"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-semibold mb-3">Kết nối với con cháu</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                        <li>Theo dõi sức khỏe & lịch uống thuốc từ xa.</li>
+                        <li>Nhận thông báo nhắc nhở tự động.</li>
+                        <li>Gửi voice notification trực tiếp.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Nhóm 1 -->
-      <div class="p-6 bg-white shadow rounded-2xl">
-        <h3 class="text-xl font-semibold mb-4">💬 Trò chuyện & Đồng hành tinh thần</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Trợ lý ảo giọng nói thân thiện, hỏi thăm mỗi ngày.</li>
-          <li>Hỏi – đáp y tế, tư vấn chăm sóc sức khỏe tinh thần & thể chất (theo khuyến cáo bác sĩ).</li>
-          <li>Ghi lại hồi ký bằng giọng nói, lưu giữ ký ức quý giá, chia sẻ với con cháu (có lưu lịch sử trò chuyện).</li>
-          <li>Tự động trích xuất thói quen & hồi ký, nhắc lại vào thời điểm phù hợp.</li>
-        </ul>
-      </div>
+    <section id="testimonials" class="bg-blue-50 py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-800">Người dùng nói gì</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">Những câu chuyện thực tế từ người dùng của chúng tôi.</p>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <blockquote class="p-8 bg-white rounded-xl shadow-lg relative">
+                    <i class="fas fa-quote-left text-blue-200 text-4xl absolute -top-4 -left-4"></i>
+                    <p class="text-lg italic text-gray-700">"VCareMind giúp mẹ tôi bớt cô đơn hơn mỗi ngày. Bà rất thích trò chuyện với ứng dụng. Cảm ơn đội ngũ phát triển!"</p>
+                    <cite class="block mt-4 text-gray-900 font-semibold">- Nguyễn Văn An</cite>
+                </blockquote>
+                <blockquote class="p-8 bg-white rounded-xl shadow-lg relative">
+                    <i class="fas fa-quote-left text-blue-200 text-4xl absolute -top-4 -left-4"></i>
+                    <p class="text-lg italic text-gray-700">"Tính năng nhắc thuốc bằng giọng nói thực sự là cứu cánh cho ông tôi. Rất đáng dùng! Gia đình tôi an tâm hơn nhiều."</p>
+                    <cite class="block mt-4 text-gray-900 font-semibold">- Trần Thị Bình</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
 
-      <!-- Nhóm 2 -->
-      <div class="p-6 bg-white shadow rounded-2xl">
-        <h3 class="text-xl font-semibold mb-4">⏰ Nhắc nhở y tế thông minh</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Thông báo bằng giọng nói gần gũi, dễ nghe.</li>
-          <li>Nhắc lịch uống thuốc, vận động, ăn uống, đi ngủ.</li>
-          <li>Tự động tạo lịch nhắc thuốc & tái khám từ đơn thuốc (kết nối bệnh viện/phòng khám).</li>
-        </ul>
-      </div>
+    <section id="download" class="bg-blue-600 text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Tải ứng dụng VCareMind</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng ngay.</p>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12">
+                <img src="./asset/qr.png" alt="QR Download" class="w-40 h-40 rounded-lg shadow-xl border-4 border-white">
+                <a href="https://drive.google.com/drive/folders/1N9ns5h7PXpGKGWMvME31-B_xEppGlf2a" target="_blank" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold shadow-xl hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                    Tải ứng dụng <i class="fas fa-download ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-      <!-- Nhóm 3 -->
-      <div class="p-6 bg-white shadow rounded-2xl">
-        <h3 class="text-xl font-semibold mb-4">📷 Quét & Quản lý thuốc</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Quét thuốc để nhận diện tên, công dụng, liều lượng.</li>
-          <li>Điều hướng nhanh đến tính năng quét thuốc bằng trợ lý ảo.</li>
-          <li>Lưu lại lịch sử thuốc để tham khảo nhanh chóng.</li>
-        </ul>
-      </div>
-
-      <!-- Nhóm 4 -->
-      <div class="p-6 bg-white shadow rounded-2xl">
-        <h3 class="text-xl font-semibold mb-4">👨‍👩‍👧‍👦 Kết nối với con cháu (Caregiver app)</h3>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Con cháu theo dõi tình trạng sức khỏe & lịch uống thuốc từ xa.</li>
-          <li>Nhận thông báo nhắc nhở tự động hoặc cảnh báo bất thường.</li>
-          <li>Gửi voice notification trực tiếp đến điện thoại người cao tuổi.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="bg-gray-100 py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Người dùng nói gì</h2>
-    <div class="max-w-3xl mx-auto space-y-6">
-      <blockquote class="p-6 bg-white rounded-xl shadow">
-        "VCareMind giúp mẹ tôi bớt cô đơn hơn mỗi ngày. Bà rất thích trò chuyện với ứng dụng."
-      </blockquote>
-      <blockquote class="p-6 bg-white rounded-xl shadow">
-        "Tính năng nhắc thuốc bằng giọng nói thực sự là cứu cánh cho ông tôi. Rất đáng dùng!"
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Download CTA -->
-  <section id="download" class="bg-indigo-600 text-white py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4">Tải ứng dụng VCareMind</h2>
-    <p class="mb-6">Quét mã QR hoặc nhấn nút bên dưới để tải ứng dụng ngay.</p>
-    <div class="flex flex-col items-center space-y-4">
-      <img src="./asset/qr.png" alt="QR Download" class="w-40 h-40 rounded-lg shadow-lg border border-white">
-      <a href="https://drive.google.com/drive/folders/1N9ns5h7PXpGKGWMvME31-B_xEppGlf2a" target="_blank" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200 transition">
-        Tải ứng dụng
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
-    <p>© 2025 VCareMind. Bản quyền thuộc về chúng tôi.</p>
-  </footer>
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto text-center px-6">
+            <p class="text-sm">&copy; 2025 VCareMind. Bản quyền thuộc về chúng tôi.</p>
+            <p class="text-xs mt-2">Được phát triển với tình yêu thương cho sức khỏe người cao tuổi.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
